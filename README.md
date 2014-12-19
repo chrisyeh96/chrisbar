@@ -54,6 +54,6 @@ Version 1.2.9
 * Updated Weather.com search URL, now only supports ZIP codes for location option
 * Optimized code and comments
 
-XPI file size: 53.7 KB (55,005 bytes)
+XPI file size: 53.7 KB (55,007 bytes)
 
-Uncompressed add-on size: 77.9 KB (79,862 bytes)
+Uncompressed add-on size: 77.9 KB (79,869 bytes)
