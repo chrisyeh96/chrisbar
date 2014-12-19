@@ -387,7 +387,7 @@ Tools: function(type, event)
     
     case "alarm": // Set Alarm
       var time = prompt("Please enter a valid time for the alarm:\n\n5 = 5 minutes\n1h3m2s = 1 hour, 3 minutes, and 2 seconds\n515pm = 5:15pm\nLeave blank for simple timer","");
-      if (!time) break; // if user clicks on 'Cancel', do nothing
+      if (time == null) break; // if user clicks on 'Cancel', do nothing
       URL = "http://cd.justinjc.com/" + time;
       break;
     
