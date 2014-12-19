@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://chrisbar/skin/chrisbar.css" type="text/css"?>
+
+<overlay id="chrisbar-overlay"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+ xmlns:HTML="http://www.w3.org/1999/xhtml">
+
+<script type="application/x-javascript"
+ src="chrome://chrisbar/content/chrisbar.js"/>
+
+<toolbox id="navigator-toolbox">
+	<toolbar id="chrisbar-toolbar" toolbarname="Chrisbar" accesskey="C"
+	 class="chromeclass-toolbar" context="toolbar-context-menu" mode="full"
+	 hidden="false" persist="hidden" customizable="true" iconsize="small" height="25">
+		<toolbaritem flex="1">
+			<toolbarbutton id="SAG-Button" tooltiptext="Go to my website"
+			 onclick="chrisbarobj.Search('sageek', event)"/>
+			
+			<menulist id="chrisbar-SearchBox" editable="true" flex="1"
+			 minwidth="100" width="250" persist="width"
+			 onkeypress="chrisbarobj.KeyHandler('web', event);">
+				<menupopup id="chrisbar-SearchBoxMenu" hidden="true" persist="hidden">
+					<menuitem id="search0" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search1" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search2" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search3" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search4" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search5" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search6" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search7" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search8" hidden="true" label="" persist="hidden label"/>
+					<menuitem id="search9" hidden="true" label="" persist="hidden label"/>
+				</menupopup>
+			</menulist>
+			
+			<toolbarbutton id="chrisbar-Search-Button" type="menu-button"
+			 label="Search" tooltiptext="Search the Web"
+			 onclick="chrisbarobj.Middle(event, 'search', 'web')"
+			 oncommand="chrisbarobj.Search('web', event)">
+				<menupopup>
+					<menuitem id="chrisbar-Search-Book" class="menuitem-iconic"
+					 label="Google Books" accesskey="B" tooltiptext="Google Books"
+					 onclick="chrisbarobj.Middle(event, 'search', 'book'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('book', event); event.stopPropagation();"/>
+          
+          <menuitem id="chrisbar-Search-Drive" class="menuitem-iconic"
+					 label="Google Drive" accesskey="D" tooltiptext="Google Drive"
+					 onclick="chrisbarobj.Middle(event, 'search', 'drive'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('drive', event); event.stopPropagation();"/>
+          
+          <menuitem id="chrisbar-Search-Image" class="menuitem-iconic"
+					 label="Google Images" accesskey="I" tooltiptext="Google Images"
+					 onclick="chrisbarobj.Middle(event, 'search', 'image'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('image', event); event.stopPropagation();"/>
+          
+          <menuitem id="chrisbar-Search-News" class="menuitem-iconic"
+					 label="Google News" accesskey="N" tooltiptext="Google News"
+					 onclick="chrisbarobj.Middle(event, 'search', 'news'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('news', event); event.stopPropagation();"/>
+					
+					<menuitem id="chrisbar-Search-Patent" class="menuitem-iconic"
+					 label="Google Patents" accesskey="a" tooltiptext="Google Patents"
+					 onclick="chrisbarobj.Middle(event, 'search', 'patent'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('patent', event); event.stopPropagation();"/>
+					
+					<menuitem id="chrisbar-Search-Scholar" class="menuitem-iconic"
+					 label="Google Scholar" accesskey="S" tooltiptext="Google Scholar"
+					 onclick="chrisbarobj.Middle(event, 'search', 'scholar'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('scholar', event); event.stopPropagation();"/>
+          
+					<menuitem id="chrisbar-Search-Shop" class="menuitem-iconic"
+					 label="Google Shopping" accesskey="h" tooltiptext="Google Shopping"
+					 onclick="chrisbarobj.Middle(event, 'search', 'shop'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('shop', event); event.stopPropagation();"/>
+          
+          <menuitem id="chrisbar-Search-Video" class="menuitem-iconic"
+					 label="Google Videos" accesskey="V" tooltiptext="Google Videos"
+					 onclick="chrisbarobj.Middle(event, 'search', 'video'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('video', event); event.stopPropagation();"/>
+          
+					<menuseparator/>
+					
+					<menuitem id="chrisbar-Search-Site" class="menuitem-iconic"
+					 label="Site Search" accesskey="t" tooltiptext="Search only on this current website"
+					 onclick="chrisbarobj.Middle(event, 'search', 'site'); event.stopPropagation();"
+					 oncommand="chrisbarobj.Search('site', event); event.stopPropagation();"/>
+				</menupopup>
+			</toolbarbutton>
+						
+			<splitter id="chrisbar-ResizeSplitter" state="open" collapse="none"
+			 resizebefore="flex" resizeafter="flex" tooltiptext="Resize the Search Box">
+				<vbox id="chrisbar-ResizeBar"/>
+			</splitter>
+			
+			<toolbaritem id="chrisbar-buttons">
+				<toolbarbutton id="chrisbar-gmail-Button"
+				 label="Gmail" tooltiptext="Gmail"
+				 onclick="chrisbarobj.Search('gmail', event)"/>
+				
+				<toolbarbutton id="chrisbar-maps-Button"
+				 label="Google Maps" tooltiptext="Google Maps"
+				 onclick="chrisbarobj.Search('map', event)"/>
+				
+				<toolbarbutton id="chrisbar-youtube-Button"
+				 label="YouTube" tooltiptext="YouTube"
+				 onclick="chrisbarobj.Search('youtube', event)"/>
+				
+				<toolbarbutton id="chrisbar-trans-Button" type="menu-button"
+				 label="Translate" tooltiptext="Translate the search term(s) into English"
+				 onclick="chrisbarobj.Middle(event, 'search', 'trans')"
+				 oncommand="chrisbarobj.Search('trans', event)">
+					<menupopup>
+						<menuitem id="chrisbar-trans-site-Button" class="menuitem-iconic"
+						 label="Translate Web Site" accesskey="W" tooltiptext="Translate the current web page into English"
+						 onclick="chrisbarobj.LoadURL('http://translate.google.com/translate?u=' + content.document.location, event); event.stopPropagation();"
+						 oncommand="chrisbarobj.LoadURL('http://translate.google.com/translate?u=' + content.document.location, event); event.stopPropagation();"/>			
+					</menupopup>
+				</toolbarbutton>
+				
+				<toolbarbutton id="chrisbar-cnet-Button"
+				 label="CNET" tooltiptext="CNET"
+				 onclick="chrisbarobj.Search('cnet', event)"/>
+				
+				<toolbarbutton id="chrisbar-dict-Button" type="menu-button"
+				 label="Dictionary" tooltiptext="Dictionary"
+				 onclick="chrisbarobj.Middle(event, 'search', 'dict')"
+				 oncommand="chrisbarobj.Search('dict', event)">
+					<menupopup>
+						<menuitem id="chrisbar-thes-Button" class="menuitem-iconic"
+						 label="Thesarurus" accesskey="T" tooltiptext="Thesaurus"
+						 onclick="chrisbarobj.Middle(event, 'search', 'thes'); event.stopPropagation();"
+						 oncommand="chrisbarobj.Search('thes', event); event.stopPropagation();"/>			
+					</menupopup>
+				</toolbarbutton>
+				
+				<toolbarbutton id="chrisbar-weather-Button"
+				 label="Weather" tooltiptext="Weather"
+				 onclick="chrisbarobj.Search('weather', event)"/>
+				
+				<toolbarbutton id="chrisbar-tools-Button" type="menu"
+				 label="Tools" tooltiptext="Tools to enhance web browsing">
+					<menupopup id="chrisbar-tools-menu">
+						<menuitem id="chrisbar-tools-scan" class="menuitem-iconic"
+						 label="Scan Website" accesskey="S" tooltiptext="Scan the current website"
+						 onclick="chrisbarobj.Middle(event, 'tool', 'scan')"
+						 oncommand="chrisbarobj.Tools('scan', event)"/>
+						<menuitem id="chrisbar-tools-alarm" class="menuitem-iconic"
+						 label="Set Alarm" accesskey="A" tooltiptext="Set an alarm"
+						 onclick="chrisbarobj.Middle(event, 'tool', 'alarm')"
+						 oncommand="chrisbarobj.Tools('alarm', event)"/>
+						<menu id="chrisbar-screenshot-menu" class="menu-iconic"
+						 label="Take Screenshot" accesskey="T" tooltiptext="Take a screenshot">
+							<menupopup>
+								<menuitem id="chrisbar-grab-entire" class="menuitem-iconic"
+								 label="Entire page" tooltiptext="Grab entire page"
+								 accesskey="E" key="screenshot-entire-key"
+								 oncommand="chrisbarobj.Screenshot(0)"/>
+								<menuitem id="chrisbar-grab-visible" class="menuitem-iconic"
+								 label="Visible region" tooltiptext="Grab visible region"
+								 accesskey="R" key="screenshot-visible-key"
+								 oncommand="chrisbarobj.Screenshot(1)"/>
+							</menupopup>
+						</menu>
+						<menuitem id="chrisbar-tools-up" class="menuitem-iconic"
+						 label="Up" accesskey="U" tooltiptext="Up one level on this web site"
+						 onclick="chrisbarobj.Up(event)"
+						 oncommand="chrisbarobj.Up(event)"/>
+						<menuitem id="chrisbar-tools-cache" class="menuitem-iconic"
+						 label="View Google Cache" accesskey="V" tooltiptext="View this page from Google's cache"
+						 onclick="chrisbarobj.Middle(event, 'tool', 'cache')"
+						 oncommand="chrisbarobj.Tools('cache', event)"/>
+					</menupopup>
+				</toolbarbutton>
+			</toolbaritem>
+			
+			<spacer flex="1" minwidth="1" persist="width"/>
+			
+			<toolbarbutton id="chrisbar-options-menuButton" type="menu-button"
+			 label="Options" tooltiptext="Change Toolbar Preferences"
+			 oncommand="chrisbarobj.openWin('options')">
+				<menupopup>
+					<menuitem id="chrisbar-about-Button" class="menuitem-iconic"
+					 label="About" accesskey="A" tooltiptext="About Chrisbar"
+					 oncommand="chrisbarobj.openWin('about'); event.stopPropagation();"/>
+					<menuitem id="chrisbar-update-Button" class="menuitem-iconic"
+					 label="Check for Updates" accesskey="C" tooltiptext="Check for updates to Chrisbar"
+					 onclick="chrisbarobj.LoadURL('http://theabsurdnerd.webs.com/chrisbar/?version=1.2.9', event); event.stopPropagation();"
+					 oncommand="chrisbarobj.LoadURL('http://theabsurdnerd.webs.com/chrisbar/?version=1.2.9', event); event.stopPropagation();"/>
+				</menupopup>
+			</toolbarbutton>
+			
+		</toolbaritem>
+	</toolbar>
+</toolbox>
+
+<menuitem id="menu_bookmarkAllTabs"/>
+
+<keyset>
+	<key id="screenshot-entire-key" modifiers="accel shift" key="E"
+	 oncommand="chrisbarobj.Screenshot(0)"/>
+	<key id="screenshot-visible-key" modifiers="accel shift" key="R"
+	 oncommand="chrisbarobj.Screenshot(1)"/>
+	<key id="copy-plain-key" modifiers="accel shift" key="C"
+	 oncommand="chrisbarobj.copyPlainText()"/>
+</keyset>
+
+<popup id="contentAreaContextMenu">
+	<menuitem label="Copy as Plain Text" id="chrisbar-context-copyplain"
+	 insertafter="context-copy" oncommand="chrisbarobj.copyPlainText()"
+	 tooltiptext="Copy the selection as plain text" accesskey="y"/>
+</popup>
+
+<menupopup id="menu_EditPopup" onpopupshowing="chrisbarobj.editMenu_OnPopupShowing();">
+	<menuitem label="Copy as Plain Text" id="chrisbar-edit-copyplain"
+	 insertafter="menu_copy" oncommand="chrisbarobj.copyPlainText()" accesskey="y"
+	 tooltiptext="Copy the selection as plain text" key="copy-plain-key"/>
+</menupopup>
+
+<menupopup id="appmenu-editmenu-menupopup" onpopupshowing="chrisbarobj.editMenu_OnPopupShowing();">
+	<menuitem label="Copy as Plain Text" id="chrisbar-appedit-copyplain"
+	 insertafter="appmenu-editmenu-copy" oncommand="chrisbarobj.copyPlainText()"
+	 tooltiptext="Copy the selection as plain text" key="copy-plain-key"/>
+</menupopup>
+
+</overlay>

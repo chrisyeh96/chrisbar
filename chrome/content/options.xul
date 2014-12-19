@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://chrisbar/skin/chrisbar.css" type="text/css"?>
+
+<prefwindow title="Chrisbar Preferences"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript"
+ src="chrome://chrisbar/content/chrisbar.js"/>
+
+<prefpane>
+	<preferences>
+		<preference id="display-mode" name="extensions.chrisbar.display-mode" type="string"/>
+		<preference id="newTab-setting" name="extensions.chrisbar.newTab-setting" type="int"/>
+		<preference id="show-gmail" name="extensions.chrisbar.show-gmail" type="bool"/>
+		<preference id="show-maps" name="extensions.chrisbar.show-maps" type="bool"/>
+		<preference id="show-youtube" name="extensions.chrisbar.show-youtube" type="bool"/>
+		<preference id="show-trans" name="extensions.chrisbar.show-trans" type="bool"/>
+		<preference id="show-cnet" name="extensions.chrisbar.show-cnet" type="bool"/>
+		<preference id="show-dict" name="extensions.chrisbar.show-dict" type="bool"/>
+		<preference id="show-weather" name="extensions.chrisbar.show-weather" type="bool"/>
+		<preference id="show-tools" name="extensions.chrisbar.show-tools" type="bool"/>
+		<preference id="weather-location" name="extensions.chrisbar.weather-location" type="string"/>
+		<preference id="screenshot-action" name="extensions.chrisbar.screenshot-action" type="int"/>
+	</preferences>
+	
+	<groupbox>
+		<caption label="Display Mode:"/>
+		<radiogroup preference="display-mode">
+			<vbox>
+				<radio label="Icons Only" value="icons"/>
+				<radio label="Text Only" value="text"/>
+				<radio label="Icons and Text" value="full"/>
+			</vbox>
+		</radiogroup>
+	</groupbox>
+	
+	<groupbox>
+		<caption label="New Tab Setting:"/>
+		<radiogroup preference="newTab-setting">
+			<vbox>
+				<radio label="Stay in Current Tab" value="0"/>
+				<radio label="Switch to New Tab" value="1"/>
+			</vbox>
+		</radiogroup>
+	</groupbox>
+	
+	<groupbox>
+		<caption label="Select buttons to enable:"/>
+		<hbox>
+			<vbox>
+				<checkbox id="pref-gmail" preference="show-gmail" label="Gmail"/>
+				<checkbox id="pref-maps" preference="show-maps" label="Google Maps"/>
+				<checkbox id="pref-youtube" preference="show-youtube" label="YouTube"/>
+				<checkbox id="pref-trans" preference="show-trans" label="Translate"/>
+			</vbox>
+			<vbox>
+				<checkbox id="pref-cnet" preference="show-cnet" label="CNET"/>
+				<checkbox id="pref-dict" preference="show-dict" label="Dictionary"/>
+				<checkbox id="pref-weather" preference="show-weather" label="Weather"/>
+				<checkbox id="pref-tools" preference="show-tools" label="Tools"/>
+			</vbox>
+		</hbox>
+	</groupbox>
+	
+	<groupbox>
+		<caption label="Weather Location:"/>
+		<textbox preference="weather-location" placeholder="ZIP Code"/>
+	</groupbox>
+	
+	<groupbox>
+		<caption label="Screenshot Action:"/>
+		<radiogroup preference="screenshot-action">
+			<vbox>
+				<radio label="Copy to Clipboard" value="0"/>
+				<radio label="Save to File" value="1"/>
+				<radio label="Copy and Save" value="2"/>
+			</vbox>
+		</radiogroup>
+	</groupbox>
+	
+	<button label="Clear Search History" oncommand="chrisbarobj.ClearHistory();"/>
+	
+</prefpane>
+
+</prefwindow>

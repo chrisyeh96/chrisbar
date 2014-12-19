@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://chrisbar/skin/chrisbar.css" type="text/css"?>
+
+<window id="chrisbar-about-window" title="About Chrisbar"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<hbox id="chrisbar-about-box">
+	<image id="chrisbar-about-logo"/>
+	<vbox align="center" pack="center">
+		<image src="chrome://chrisbar/skin/chrisbar_text.png"/>
+		<separator/>
+		<label class="header">Version 1.2.9</label>
+		<label/>
+		<label>Designed and created by Chris Yeh.</label>
+		<label/>
+		<label>Please visit
+			<label class="plain text-link" href="http://theabsurdnerd.webs.com/chrisbar">
+				my website</label> for more information.
+		</label>
+		<label/>
+		<!--"&#169;" displays the copyright symbol-->
+		<label>Copyright &#169; 2014 Christopher Yeh</label>
+	</vbox>
+</hbox>
+
+</window>

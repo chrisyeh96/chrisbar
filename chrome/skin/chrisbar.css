@@ -1,0 +1,151 @@
+toolbarbutton > .toolbarbutton-menubutton-button {
+	-moz-box-orient: horizontal;
+}
+
+#SAG-Button{
+	list-style-image: url("chrome://chrisbar/skin/sageek_16.png");
+}
+
+#chrisbar-ResizeBar {
+	background-image: url("chrome://chrisbar/skin/splitter.png");
+	min-height: 24px;
+	min-width: 11px;
+}
+
+#chrisbar-ResizeSplitter {
+	background: transparent;
+	border: none !important;
+}
+
+#chrisbar-Search-Button {
+	list-style-image: url("chrome://chrisbar/skin/google.png");
+}
+
+#chrisbar-Search-Site,
+#chrisbar-tools-cache {
+	list-style-image: url("chrome://chrisbar/skin/site.png");
+}
+
+#chrisbar-Search-Book {
+	list-style-image: url("chrome://chrisbar/skin/books.png");
+}
+
+#chrisbar-Search-Drive {
+	list-style-image: url("chrome://chrisbar/skin/drive.png");
+}
+
+#chrisbar-Search-Image {
+	list-style-image: url("chrome://chrisbar/skin/images.png");
+}
+
+#chrisbar-Search-News {
+	list-style-image: url("chrome://chrisbar/skin/news.png");
+}
+
+#chrisbar-Search-Patent {
+	list-style-image: url("chrome://chrisbar/skin/patents.png");
+}
+
+#chrisbar-Search-Scholar {
+	list-style-image: url("chrome://chrisbar/skin/scholar.png");
+}
+
+#chrisbar-Search-Shop {
+	list-style-image: url("chrome://chrisbar/skin/shop.png");
+}
+
+#chrisbar-Search-Video {
+	list-style-image: url("chrome://chrisbar/skin/videos.png");
+}
+
+#chrisbar-gmail-Button,
+#pref-gmail {
+	list-style-image: url("chrome://chrisbar/skin/gmail.png");
+}
+
+#chrisbar-maps-Button,
+#pref-maps {
+	list-style-image: url("chrome://chrisbar/skin/maps.png");
+}
+
+#chrisbar-youtube-Button,
+#pref-youtube {
+	list-style-image: url("chrome://chrisbar/skin/youtube.png");
+}
+
+#chrisbar-trans-Button,
+#chrisbar-trans-site-Button,
+#pref-trans {
+	list-style-image: url("chrome://chrisbar/skin/trans.png");
+}
+
+#chrisbar-cnet-Button,
+#pref-cnet {
+	list-style-image: url("chrome://chrisbar/skin/cnet.png");
+}
+
+#chrisbar-dict-Button,
+#pref-dict {
+	list-style-image: url("chrome://chrisbar/skin/dict.png");
+}
+
+#chrisbar-thes-Button,
+#pref-thes {
+	list-style-image: url("chrome://chrisbar/skin/thes.png");
+}
+
+#chrisbar-weather-Button,
+#pref-weather {
+	list-style-image: url("chrome://chrisbar/skin/weather.png");
+}
+
+#chrisbar-tools-Button,
+#pref-tools {
+	list-style-image: url("chrome://chrisbar/skin/tools.png");
+}
+
+#chrisbar-tools-scan {
+	list-style-image: url("chrome://chrisbar/skin/urlvoid.png");
+}
+
+#chrisbar-tools-alarm {
+	list-style-image: url("chrome://chrisbar/skin/alarm.png");
+}
+
+#chrisbar-screenshot-menu {
+	list-style-image: url("chrome://chrisbar/skin/grab_portion.png");
+}
+
+#chrisbar-grab-entire {
+	list-style-image: url("chrome://chrisbar/skin/grab_entire.png");
+}
+
+#chrisbar-grab-visible {
+	list-style-image: url("chrome://chrisbar/skin/grab_visible.png");
+}
+
+#chrisbar-tools-up {
+	list-style-image: url("chrome://chrisbar/skin/up.png");
+}
+
+#chrisbar-options-menuButton {
+	list-style-image: url("chrome://chrisbar/skin/options.png");
+}
+
+#chrisbar-about-Button {
+	list-style-image: url("chrome://chrisbar/skin/about.png");
+}
+
+#chrisbar-update-Button {
+	list-style-image: url("chrome://chrisbar/skin/update.png");
+}
+
+#chrisbar-about-logo {
+	list-style-image: url("chrome://chrisbar/skin/sageek_large.png");
+	padding-right: 10px;
+	width: 124px;
+}
+
+#chrisbar-about-box {
+	padding: 10px;
+}
