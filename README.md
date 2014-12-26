@@ -26,8 +26,8 @@ Supported search types include the following:
 **Quick Screenshots** of either entire website or just the visible region
 
 * Option to copy the screenshot, save to an image file, or both
-* Keyboard shortcut to screenshot entire page: `Ctrl + Shift + E`
-* Keyboard shortcut to screenshot visible region: `Ctrl + Shift + R`
+* Keyboard shortcut to screenshot entire page: `Ctrl + Alt + E`
+* Keyboard shortcut to screenshot visible region: `Ctrl + Alt + R`
 
 **Lookup Highlighted Text** in either Dictionary.com or Thesaurus.com
 
@@ -48,7 +48,7 @@ Supported search types include the following:
 Version 1.3.0
 
 * Fixed broken search functionality
-* Reverted keyboard shortcut for copying plain text to `Ctrl+Alt+C`
+* Reverted keyboard shortcut for copying plain text to `Ctrl + Alt + C`
 * Optimized code and comments
 
 XPI file size: 53.7 KB (55,037 bytes)
