@@ -36,7 +36,7 @@ Supported search types include the following:
 **Copy as plain text**: remove formatting and excess white spaces from selected text
 
 * Added to right-click context menu and Edit menu
-* Keyboard shortcut: `Ctrl + Shift + C`
+* Keyboard shortcut: `Ctrl + Alt + C`
 
 **Other features**
 * Scan the current website with URLVoid
@@ -45,15 +45,12 @@ Supported search types include the following:
 
 ## Version History
 
-Version 1.2.9
+Version 1.3.0
 
-* Added Google Drive search functionality
-* Updated icons for Google, Gmail, YouTube, Dictionary, Thesaurus, and URLVoid
-* Fixed broken keyboard shortcut for copying plain text (Ctrl+Alt+C) by changing it to (Ctrl+Shift+C)
-* Updated requirement to Firefox 20+
-* Updated Weather.com search URL, now only supports ZIP codes for location option
+* Fixed broken search functionality
+* Reverted keyboard shortcut for copying plain text to `Ctrl+Alt+C`
 * Optimized code and comments
 
-XPI file size: 53.7 KB (55,007 bytes)
+XPI file size: 53.7 KB (55,037 bytes)
 
-Uncompressed add-on size: 77.9 KB (79,869 bytes)
+Uncompressed add-on size: 79.8 KB (81,789 bytes)
