@@ -2,6 +2,8 @@
 
 **A lightweight Firefox toolbar for speeding up common tasks**
 
+![Full Screenshot](https://github.com/chrisyeh96/chrisbar/blob/master/full_screenshot.png)
+
 Supported search types include the following:
 * ![Google](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/google.png)
 * ![Google Books](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/books.png) Google Books
