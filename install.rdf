@@ -5,7 +5,7 @@
 
 <Description about="urn:mozilla:install-manifest">
   <em:id>chrisbar@sagaciousgeek.com</em:id>
-  <em:version>1.3.0</em:version>
+  <em:version>1.3.1</em:version>
   <em:type>2</em:type>
   
   <!-- Target Application this extension can install into,
@@ -13,14 +13,14 @@
   <em:targetApplication>
      <Description>
       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-      <em:minVersion>20.*</em:minVersion>
+      <em:minVersion>36.*</em:minVersion>
       <em:maxVersion>100.*</em:maxVersion>
     </Description>
   </em:targetApplication>
   
   <!-- Front End MetaData -->
   <em:name>Chrisbar</em:name>
-  <em:description>An alternate "Google" toolbar that works in Firefox 20+.</em:description>
+  <em:description>An alternate "Google" toolbar that works in Firefox 36+.</em:description>
   <em:creator>Christopher Yeh</em:creator>
   <em:homepageURL>http://theabsurdnerd.webs.com/</em:homepageURL>
   <em:iconURL>chrome://chrisbar/skin/sageek_48.png</em:iconURL>

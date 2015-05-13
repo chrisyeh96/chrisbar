@@ -60,7 +60,7 @@ updateToolbar: function() {
 ConvertTermsToURI: function(terms) {
   // Split the search term string at each whitespace 
   // and store it into an array
-  termArray = terms.split(" ");
+  var termArray = terms.split(" ");
   
   // Create a variable to hold our resulting URI-safe value
   var result = "";
@@ -91,7 +91,7 @@ KeyHandler: function(type, event) {
 * the event and also the preference newTab-setting.
 **********/
 LoadURL: function(url, event) {
-  if (event.ctrlKey) { // If [CTRL] was pressed
+  if (event.ctrlKey) { // if [CTRL] was pressed
     event = new Object();
     event.button = 1; // treat the command like a middle-click
   }
@@ -119,15 +119,16 @@ LoadURL: function(url, event) {
 Search: function(type, event) {
   var URL = ""; // Holds the URL we will browse to
   
-  // Get a handle to our search terms box (the <menulist> element)
+  // a handle to our search terms box (the <menulist> element)
   var searchBox = document.getElementById('chrisbar-SearchBox');
   
-  // Get value of search terms box and trim whitespace using TrimString()
+  // value of search terms box and trim whitespace using TrimString()
   var searchTerms = this.TrimString(searchBox.value);
   
-  var isEmpty = (searchTerms.length == 0); // Tells whether search box is empty or not
+  // identify whether search box is empty or not
+  var isEmpty = (searchTerms.length == 0);
   
-  // if the search box is not empty, convert the terms to a URL-safe string
+  // convert search terms to a URL-safe string
   if(!isEmpty) {
     this.Populate(searchTerms);
     searchTerms = this.ConvertTermsToURI(searchTerms);
@@ -135,7 +136,7 @@ Search: function(type, event) {
   
   var Google = "http://www.google.com/";
   
-  // store highlighted / selected text in a variable
+  // get highlighted / selected text
   var selText = document.commandDispatcher.focusedWindow.getSelection();
   
   // Switch on the incoming type value. If the search box is empty,
@@ -167,7 +168,7 @@ Search: function(type, event) {
       break;
     
     case "drive": // Google Drive
-      if(isEmpty) { URL = Google + "drive"; } 
+      if(isEmpty) { URL = "https://drive.google.com/"; } 
       else { URL = "https://drive.google.com/drive/#search?q=" + searchTerms; }
       break;
       
@@ -302,7 +303,7 @@ Populate: function(terms) {
   var menu = document.getElementById("chrisbar-SearchBoxMenu");
   menu.hidden = false; // Make the menupopup visible
   
-  topItem = menu.childNodes.item(0);
+  var topItem = menu.childNodes.item(0);
   
   if (topItem.label != terms) {
     for(var i=9; i>0; i--) {
@@ -324,7 +325,7 @@ Populate: function(terms) {
 **********/
 Up: function(e) {
   const loc = content.document.location, pro = loc.protocol;
-  if(!/^ftp|http|https$/.test(pro)) return;
+  if(!/^file|ftp|http|https$/.test(pro)) return; // do nothing if URL protocol is unrecognized
   const up = this.getUpUrl(loc.href);
   if(up) this.LoadURL(up, e);
 },
@@ -334,7 +335,7 @@ Up: function(e) {
 **********/
 getUpUrl: function(url) {
   var matches, origUrl = url;
-  // trim filename (this makes subdriectory digging easier)
+  // trim filename (this makes subdirectory digging easier)
   matches = url.match(/(^.*\/)(.*)/);
   if(!matches) return null; //only fails when the "url" has no /'s
   url = matches[1];
@@ -412,8 +413,8 @@ Screenshot: function(type) {
         h = winDoc.body.clientHeight;
         w = winDoc.body.clientWidth;
       }
-      var x = win.scrollX;
-      var y = win.scrollY;
+      x = win.scrollX;
+      y = win.scrollY;
       break;
   }
   
@@ -521,7 +522,7 @@ Screenshot: function(type) {
       xfer.init(source, target, "", null, null, null, persist, true);
       persist.progressListener = xfer;
 
-      persist.savePrivacyAwareURI(source, null, null, null, null, file, true);
+      persist.savePrivacyAwareURI(source, null, null, null, null, null, file, true);
     }
   }
 },

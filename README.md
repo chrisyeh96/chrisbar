@@ -45,14 +45,16 @@ Supported search types include the following:
 * Set an alarm via http://cd.justinjc.com/
 * View the Google Cached version of the current website
 
-## Version History
+## Changes
 
-Version 1.3.0
+Version 1.3.1 (May 13, 2015)
 
-* Fixed broken search functionality
-* Reverted keyboard shortcut for copying plain text to `Ctrl + Alt + C`
+* Changed Google Drive link to go straight to Google Drive rather than Google Drive landing page
+* Up command now works on local files
+* Fixed screenshot feature not working in Firefox 36+ due to changes in the savePrivacyAwareURI() function syntax
+* Changed compatibility from Firefox 20+ to Firefox 36+
 * Optimized code and comments
 
-XPI file size: 53.7 KB (55,037 bytes)
+XPI file size: 53.7 KB (55,031 bytes)
 
-Uncompressed add-on size: 79.8 KB (81,789 bytes)
+Uncompressed add-on size: 79.8 KB (81,810 bytes)
