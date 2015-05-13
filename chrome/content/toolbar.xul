@@ -184,8 +184,8 @@
            oncommand="chrisbarobj.openWin('about'); event.stopPropagation();"/>
           <menuitem id="chrisbar-update-Button" class="menuitem-iconic"
            label="Check for Updates" accesskey="C" tooltiptext="Check for updates to Chrisbar"
-           onclick="chrisbarobj.LoadURL('http://theabsurdnerd.webs.com/chrisbar/?version=1.3.0', event); event.stopPropagation();"
-           oncommand="chrisbarobj.LoadURL('http://theabsurdnerd.webs.com/chrisbar/?version=1.3.0', event); event.stopPropagation();"/>
+           onclick="chrisbarobj.LoadURL('http://theabsurdnerd.webs.com/chrisbar/?version=1.3.1', event); event.stopPropagation();"
+           oncommand="chrisbarobj.LoadURL('http://theabsurdnerd.webs.com/chrisbar/?version=1.3.1', event); event.stopPropagation();"/>
         </menupopup>
       </toolbarbutton>
       
