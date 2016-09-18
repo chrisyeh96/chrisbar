@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <style>
+    form {
+      font-family: "Segoe UI";
+      font-size: 15px;
+      color: rgb(51, 51, 51);
+    }
+
+    .option {
+      margin: 1em auto;
+    }
+
+    .option-label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Options</legend>
+
+      <!-- Weather Location -->
+      <div class="option">
+        <label class="option-label" for="zipCode">Weather Location</label>
+        <input id="zipCode" name="zipCode" type="text">
+      </div>
+
+      <!-- New Tabs -->
+      <div class="option">
+        <label class="option-label">New Tab Setting</label>
+        <label>
+          <input name="newTab" type="radio" value="stay">
+          Stay in Current Tab (default)
+        </label><br>
+
+        <label>
+          <input name="newTab" type="radio" value="switch">
+          Switch to New Tab
+        </label>
+      </div>
+
+      <!-- Screenshot Action -->
+      <div class="option">
+        <label class="option-label">Screenshot Action</label>
+        <label>
+          <input name="screenshot" type="radio" value="copy">
+          Copy to Clipboard (default)
+        </label><br>
+
+        <label>
+          <input name="screenshot" type="radio" value="save">
+          Save to File
+        </label><br>
+
+        <label>
+          <input name="screenshot" type="radio" value="copyAndSave">
+          Copy and Save
+        </label>
+      </div>
+    </fieldset>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

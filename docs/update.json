@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "chrisbar@chrisbar.com": {
+      "updates": [
+        {
+          "version": "2.0",
+          "update_link": "https://github.com/chrisyeh96/chrisbar/raw/master/chrisbar.xpi"
+        }
+      ]
+    }
+  }
+}

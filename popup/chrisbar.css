@@ -1,0 +1,72 @@
+/* Just being explicit here. Using "browser_style": true in manifest.json automatically sets this */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 5px;
+  margin: 0;
+}
+
+/********** GENERAL CLASSES **********/
+
+.section-row {
+  margin: 5px 0;
+}
+
+.row-element {
+  height: 24px;
+  margin: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+/********** SEARCH BAR **********/
+
+#chrisbar-search-bar {
+  display: flex;
+}
+
+#chrisbar-search-input {
+  flex: 1;
+}
+
+/********** SEARCH ICONS **********/
+
+#chrisbar-search-icons {
+  float: left;
+  width: 146px; /* 4 icons per row (4*34px) + 8px padding (1*8px) + 2px border (1*2px)*/
+  padding-right: 5px;
+  border-right: 2px gray solid;
+  text-align: center;
+}
+
+img.row-element {
+  width: 24px;
+  vertical-align: middle;
+}
+
+div.chrisbar-icon-spacer {
+  /* total height needs to be 34px to match icons, only want 2px line though */
+  margin: 16px auto;
+  width: 33%;
+  height: 2px;
+  background-color: #D3D3D3; /* light gray */
+}
+
+/********** TOOLS **********/
+
+#chrisbar-tools {
+  float: left;
+  margin: 0 5px; /* 5px left/right */
+}
+
+#chrisbar-tools span {
+  display: inline-block;
+  margin-left: 5px;
+}

@@ -1,6 +1,0 @@
-content	chrisbar	chrome/content/
-overlay chrome://browser/content/browser.xul chrome://chrisbar/content/toolbar.xul
-
-locale chrisbar en-US chrome/locale/en-US/
-
-skin chrisbar classic/1.0 chrome/skin/

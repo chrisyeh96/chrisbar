@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Chrisbar",
+  "version": "2.0",
+
+  "description": "Simple shortcut menu for useful tools",
+  "homepage_url": "https://chrisyeh96.github.io/chrisbar",
+  "icons": {
+    "16": "logo/logo_16.png",
+    "48": "logo/logo_48.png",
+    "96": "logo/logo_96.png"
+  },
+
+  "browser_action": {
+    "default_icon": "logo/logo.svg",
+    "default_title": "chrisbar",
+    "default_popup": "popup/chrisbar.html",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "chrisbar@chrisyeh96.github.io",
+      "update_url": "https://chrisyeh96.github.io/chrisbar/updates.json"
+    }
+  },
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "permissions": ["storage", "activeTab", "tabs", "<all_urls>", "contextMenus"]
+}

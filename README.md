@@ -5,35 +5,34 @@
 ![Full Screenshot](https://github.com/chrisyeh96/chrisbar/blob/master/full_screenshot.png)
 
 Supported search types include the following:
-* ![Google](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/google.png)
-* ![Google Books](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/books.png) Google Books
-* ![Google Drive](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/drive.png) Google Drive
-* ![Google Images](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/images.png) Google Images
-* ![Google News](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/news.png) Google News
-* ![Google Patents](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/patents.png) Google Patents
-* ![Google Scholar](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/scholar.png) Google Scholar
-* ![Google Shopping](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/shop.png) Google Shopping
-* ![Google Videos](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/videos.png) Google Videos
-* ![Gmail](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/gmail.png) Gmail
-* ![Google Maps](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/maps.png) Google Maps
-* ![Youtube](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/youtube.png) YouTube
-* ![Google Translate](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/trans.png) Google Translate
-* ![c|net](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/cnet.png) c|net
-* ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/dict.png) Dictionary.com
-* ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/thes.png) Thesaurus.com
-* ![Weather.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/weather.png) The Weather Channel
+* ![Google](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/google.png) Google
+* ![Gmail](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/gmail.png) Gmail
+* ![Google Books](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/books.png) Google Books
+* ![Google Calendar](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/calendar.png) Google Calendar
+* ![Google Contacts](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/contacts.png) Google Contacts
+* ![Google Drive](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/drive.png) Google Drive
+* ![Google Images](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/images.png) Google Images
+* ![Google Keep](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/keep.png) Google Keep
+* ![Google Maps](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/maps.png) Google Maps
+* ![Google News](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/news.png) Google News
+* ![Google Patents](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/patents.png) Google Patents
+* ![Google Scholar](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/scholar.png) Google Scholar
+* ![Google Shopping](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/shop.png) Google Shopping
+* ![Google Translate](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/translate.png) Google Translate
+* ![Google Videos](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/videos.png) Google Videos
+* ![Youtube](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/youtube.png) YouTube
+* ![c|net](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/cnet.png) c|net
+* ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/dict.png) Dictionary.com
+* ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/thes.png) Thesaurus.com
+* ![Weather.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/weather.png) The Weather Channel
 
 ## Features
 
-**Quick Screenshots** of either entire website or just the visible region
-
-* Option to copy the screenshot, save to an image file, or both
-* Keyboard shortcut to screenshot entire page: `Ctrl + Alt + E`
-* Keyboard shortcut to screenshot visible region: `Ctrl + Alt + R`
+**Screenshot** the visible region of the website
 
 **Lookup Highlighted Text** in either Dictionary.com or Thesaurus.com
 
-* Select text to look up, then click on ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/dict.png) Dictionary or ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/thes.png) Thesaurus
+* Select text to look up, then click on ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/dict.png) Dictionary or ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/thes.png) Thesaurus
 
 **Copy as plain text**: remove formatting and excess white spaces from selected text
 
@@ -47,14 +46,14 @@ Supported search types include the following:
 
 ## Changes
 
-Version 1.3.1 (May 13, 2015)
+Version 2.0 (September 22, 2016)
 
-* Changed Google Drive link to go straight to Google Drive rather than Google Drive landing page
-* Up command now works on local files
-* Fixed screenshot feature not working in Firefox 36+ due to changes in the savePrivacyAwareURI() function syntax
-* Changed compatibility from Firefox 20+ to Firefox 36+
-* Optimized code and comments
+* Rewrote from scratch using webextension API
+* Toolbar is collapsed into a single button
+* Cross-Browser compatible with Firefox, Google Chrome, and Microsoft Edge
+* Removed full-page screenshot functionality (already available in Firefox developer tools)
+* Added Google Calendar, Contacts, and Keep to search options
+* Enable automatic add-on updates
 
-XPI file size: 53.7 KB (55,031 bytes)
-
-Uncompressed add-on size: 79.8 KB (81,810 bytes)
+XPI file size: 43.1 KB (44,219 bytes)
+Uncompressed add-on size: 56.1 KB (57,479 bytes)
