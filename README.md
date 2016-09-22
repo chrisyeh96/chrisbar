@@ -36,7 +36,7 @@ Supported search types include the following:
 
 **Copy as plain text**: remove formatting and excess white spaces from selected text
 
-* Added to right-click context menu and Edit menu
+* Added to right-click context menu and Edit menu (Google Chrome only)
 * Keyboard shortcut: `Ctrl + Alt + C`
 
 **Other features**
@@ -46,14 +46,10 @@ Supported search types include the following:
 
 ## Changes
 
-Version 2.0 (September 22, 2016)
+Version 2.0.1 (September 22, 2016)
 
-* Rewrote from scratch using webextension API
-* Toolbar is collapsed into a single button
-* Cross-Browser compatible with Firefox, Google Chrome, and Microsoft Edge
-* Removed full-page screenshot functionality (already available in Firefox developer tools)
-* Added Google Calendar, Contacts, and Keep to search options
-* Enable automatic add-on updates
+* Testing auto-update mechanism
 
-XPI file size: 43.1 KB (44,219 bytes)
-Uncompressed add-on size: 56.1 KB (57,479 bytes)
+XPI file size: 43.2 KB (44,237 bytes)
+
+Uncompressed add-on size: 56.1 KB (57,481 bytes)

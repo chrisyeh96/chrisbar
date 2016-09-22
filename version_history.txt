@@ -1,3 +1,12 @@
+Version 2.0.1 (September 22, 2016)
+
+* Testing auto-update mechanism
+
+XPI file size: 43.2 KB (44,237 bytes)
+Uncompressed add-on size: 56.1 KB (57,481 bytes)
+
+---
+
 Version 2.0 (September 22, 2016)
 
 * Rewrote from scratch using webextension API
@@ -7,8 +16,8 @@ Version 2.0 (September 22, 2016)
 * Added Google Calendar, Contacts, and Keep to search options
 * Enable automatic add-on updates
 
-XPI file size: __
-Uncompressed add-on size: __
+XPI file size: 43.1 KB (44,219 bytes)
+Uncompressed add-on size: 56.1 KB (57,479 bytes)
 
 ---
 
