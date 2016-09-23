@@ -6,6 +6,7 @@
     getPreferenceForKey: function(key, resultHandler) {
       chrome.storage.local.get(key, function(result) {
         value = result[key];
+        console.log(resultHandler);
         resultHandler(value);
       });
     },
@@ -22,8 +23,11 @@
       switch(event.button) {
       case 1: // Middle-click or [CTRL] was pressed
         // open link in new tab, then optionally switch to it based on user preference
-        var setNewTabActive = utils.getPreferenceForKey("chrisbar-pref-setNewTabActive");
-        chrome.tabs.create({url: url, active: setNewTabActive});
+        utils.getPreferenceForKey("newTab", function(newTabSetting) {
+          var switchToNewTab = (newTabSetting == "switch");
+          console.log("Swith to new tab: " + switchToNewTab);
+          chrome.tabs.create({url: url, active: switchToNewTab});
+        });
         break;
       case 2: // Right click, do nothing
         break;
@@ -31,6 +35,9 @@
         // open link in current tab, get focus
         chrome.tabs.update({url: url, active: true});
       }
+
+      // close the popup
+      window.close();
     },
 
     /* trimString
@@ -134,14 +141,7 @@
   var searchIcons = {
     "alarm" : {
       link: "http://cd.justinjc.com/",
-      search: "http://cd.justinjc.com/",
-      specialFunction: function(url, searchTerms, urlLoader) {
-        if (searchTerms && searchTerms.length > 0) {
-          urlLoader(url);
-        } else {
-          alert("Valid inputs:\n\n5 = 5 minutes\n1h3m2s = 1 hour, 3 minutes, and 2 seconds\n515pm = 5:15pm\nLeave blank for simple timer");
-        }
-      }
+      search: "http://cd.justinjc.com/"
     },
     "CNET" : {
       image: "cnet.png",
@@ -436,6 +436,7 @@
     },
     "Set Alarm" : {
       image: "alarm.png",
+      tooltip: "Valid inputs:\n\n5 = 5 minutes\n1h3m2s = 1 hour, 3 minutes, and 2 seconds\n515pm = 5:15pm\nLeave blank for simple timer",
       command: function(event) {
         performSearch("alarm", event);
       }
@@ -486,6 +487,10 @@
     row.classList.add("chrisbar-tool");
     row.appendChild(img);
     row.appendChild(text);
+
+    if (tool.tooltip) {
+      row.title = tool.tooltip;
+    }
 
     toolsDiv.appendChild(row);
   }

@@ -36,8 +36,10 @@ document.addEventListener('keyup', handleKeyUp, false);
 
 // set up message listener
 function handleMessage(request, sender, sendResponse) {
-  if (request.message == "copy-as-plain-text") {
-    copyText();
+  switch (request.method) {
+    case "copy-as-plain-text":
+      copyText();
+      break;
   }
 }
 

@@ -46,10 +46,11 @@ Supported search types include the following:
 
 ## Changes
 
-Version 2.0.1 (September 22, 2016)
+Version 2.0.2 (September 22, 2016)
 
-* Testing auto-update mechanism
+* Fix bug to respect new-tab setting
+* Close the popup after clicking on a button
 
-XPI file size: 43.2 KB (44,237 bytes)
+XPI file size: 43.1 KB (44,212 bytes)
 
-Uncompressed add-on size: 56.1 KB (57,481 bytes)
+Uncompressed add-on size: 56.2 KB (57,595 bytes)

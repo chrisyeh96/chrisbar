@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Chrisbar",
-  "version": "2.0.1",
+  "version": "2.0.2",
 
   "description": "Simple shortcut menu for useful tools",
   "homepage_url": "https://chrisyeh96.github.io/chrisbar",

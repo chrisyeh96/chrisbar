@@ -4,10 +4,11 @@ P2
 - add more options
   - icons vs. text
   - enable / disable icons
-- test extension on Google Chrome
+- close popup after screenshot on Google Chrome
 
 Delayed
 - enable context menu for Firefox
   - requires document.execCommand("copy") to be permitted in background script
   - clipboard access permission?
   - should be supported by Firefox 51
+- waiting for Firefox to support tooltips in popup (for alarm instructions)
