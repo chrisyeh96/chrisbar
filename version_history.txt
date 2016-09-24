@@ -1,3 +1,13 @@
+Version 2.0.3 (September 23, 2016)
+
+* Fix bug to enable pressing Enter to search
+* Automatically focus the search bar when the popup loads
+
+XPI file size: 48.6 KB (49,828 bytes)
+Uncompressed add-on size: 56.2 KB (57,574 bytes)
+
+---
+
 Version 2.0.2 (September 22, 2016)
 
 * Fix bug to respect new-tab setting

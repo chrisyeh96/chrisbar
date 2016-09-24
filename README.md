@@ -30,9 +30,7 @@ Supported search types include the following:
 
 **Screenshot** the visible region of the website
 
-**Lookup Highlighted Text** in either Dictionary.com or Thesaurus.com
-
-* Select text to look up, then click on ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/dict.png) Dictionary or ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/popup/icons/thes.png) Thesaurus
+**Search Highlighted Text** without typing it into the search bar
 
 **Copy as plain text**: remove formatting and excess white spaces from selected text
 
@@ -46,11 +44,11 @@ Supported search types include the following:
 
 ## Changes
 
-Version 2.0.2 (September 22, 2016)
+Version 2.0.3 (September 23, 2016)
 
-* Fix bug to respect new-tab setting
-* Close the popup after clicking on a button
+* Fix bug to enable pressing Enter to search
+* Automatically focus the search bar when the popup loads
 
-XPI file size: 43.1 KB (44,212 bytes)
+XPI file size: 48.6 KB (49,828 bytes)
 
-Uncompressed add-on size: 56.2 KB (57,595 bytes)
+Uncompressed add-on size: 56.2 KB (57,574 bytes)

@@ -350,10 +350,9 @@
 
   // set up search input handling
   var searchInput = document.getElementById("chrisbar-search-input");
-  searchInput.onKeyPress = function(event) {
-    if (event.keyCode == event.DOM_VK_RETURN) {
-      type = "Web";
-      performSearch(type, event);
+  searchInput.onkeypress = function(event) {
+    if (event.key == "Enter") {
+      performSearch("Web", event);
     }
   }
 

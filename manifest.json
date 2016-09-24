@@ -1,9 +1,11 @@
 {
+  // Required
   "manifest_version": 2,
   "name": "Chrisbar",
-  "version": "2.0.2",
+  "version": "2.0.3",
 
-  "description": "Simple shortcut menu for useful tools",
+  // Optional
+  "description": "Simple shortcut menu for useful search shortcuts and tools",
   "homepage_url": "https://chrisyeh96.github.io/chrisbar",
   "icons": {
     "16": "logo/logo_16.png",
@@ -31,7 +33,6 @@
 
   "applications": {
     "gecko": {
-      "id": "chrisbar@chrisyeh96.github.io",
       "update_url": "https://chrisyeh96.github.io/chrisbar/updates.json"
     }
   },
