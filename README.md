@@ -2,26 +2,26 @@
 
 **A lightweight Firefox toolbar for speeding up common tasks**
 
-![Full Screenshot](https://github.com/chrisyeh96/chrisbar/blob/master/full_screenshot.png)
+![Full Screenshot](https://github.com/chrisyeh96/chrisbar/blob/xul/full_screenshot.png)
 
 Supported search types include the following:
-* ![Google](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/google.png)
-* ![Google Books](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/books.png) Google Books
-* ![Google Drive](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/drive.png) Google Drive
-* ![Google Images](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/images.png) Google Images
-* ![Google News](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/news.png) Google News
-* ![Google Patents](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/patents.png) Google Patents
-* ![Google Scholar](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/scholar.png) Google Scholar
-* ![Google Shopping](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/shop.png) Google Shopping
-* ![Google Videos](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/videos.png) Google Videos
-* ![Gmail](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/gmail.png) Gmail
-* ![Google Maps](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/maps.png) Google Maps
-* ![Youtube](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/youtube.png) YouTube
-* ![Google Translate](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/trans.png) Google Translate
-* ![c|net](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/cnet.png) c|net
-* ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/dict.png) Dictionary.com
-* ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/thes.png) Thesaurus.com
-* ![Weather.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/weather.png) The Weather Channel
+* ![Google](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/google.png)
+* ![Google Books](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/books.png) Google Books
+* ![Google Drive](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/drive.png) Google Drive
+* ![Google Images](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/images.png) Google Images
+* ![Google News](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/news.png) Google News
+* ![Google Patents](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/patents.png) Google Patents
+* ![Google Scholar](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/scholar.png) Google Scholar
+* ![Google Shopping](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/shop.png) Google Shopping
+* ![Google Videos](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/videos.png) Google Videos
+* ![Gmail](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/gmail.png) Gmail
+* ![Google Maps](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/maps.png) Google Maps
+* ![Youtube](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/youtube.png) YouTube
+* ![Google Translate](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/trans.png) Google Translate
+* ![c|net](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/cnet.png) c|net
+* ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/dict.png) Dictionary.com
+* ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/thes.png) Thesaurus.com
+* ![Weather.com](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/weather.png) The Weather Channel
 
 ## Features
 
@@ -33,7 +33,7 @@ Supported search types include the following:
 
 **Lookup Highlighted Text** in either Dictionary.com or Thesaurus.com
 
-* Select text to look up, then click on ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/dict.png) Dictionary or ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/master/chrome/skin/thes.png) Thesaurus
+* Select text to look up, then click on ![Dictionary.com](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/dict.png) Dictionary or ![Thesaurus.com](https://github.com/chrisyeh96/chrisbar/blob/xul/chrome/skin/thes.png) Thesaurus
 
 **Copy as plain text**: remove formatting and excess white spaces from selected text
 
